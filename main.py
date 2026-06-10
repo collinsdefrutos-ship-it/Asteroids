@@ -17,6 +17,7 @@ def main():
         log_state()
         screen.fill("black")
         dt = clock.tick(60) / 1000.0
+        player.update(dt)
         player.draw(screen)
 
         for event in pygame.event.get():
